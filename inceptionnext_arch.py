@@ -278,7 +278,7 @@ def inceptionnext_tiny(path: str | None = None):
         state = torch.load(path, map_location="cpu")
     else:
         state = torch.hub.load_state_dict_from_url(
-            url="https://github.com/umzi2/SparK/releases/download/weight_33_ep/convnext_tiny_1kpretrained_timm_style.pth",
+            url="https://github.com/umzi2/SparK_Perceptual/releases/download/pretrain/epoch290.pth",
             map_location="cpu",
             weights_only=True,
         )
